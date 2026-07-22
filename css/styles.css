@@ -157,7 +157,7 @@ ul {
 }
 
 .brand-logo {
-  height: 2.35rem;
+  height: 2.85rem;
   width: auto;
   display: block;
 }
@@ -382,7 +382,7 @@ ul {
 }
 
 .hero-logo {
-  height: clamp(3.25rem, 8vw, 4.75rem);
+  height: clamp(4.25rem, 10vw, 6.25rem);
   width: auto;
   display: block;
 }
@@ -811,9 +811,9 @@ ul {
 }
 
 .footer-logo {
-  height: 2.5rem;
+  height: 3rem;
   width: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 1.15rem;
   display: block;
 }
 
