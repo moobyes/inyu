@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 | 英渝哲文</title>
+  <meta name="description" content="联系上海英渝哲文科技有限公司，洽谈技术合作或采购需求。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="英渝哲文首页">
+        <span class="brand-mark">英渝哲文</span>
+        <span class="brand-sub">inYu Technology</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="site-nav">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于我们</a>
+        <a href="services.html">业务与服务</a>
+        <a href="contact.html" aria-current="page">联系我们</a>
+        <a class="btn btn-primary" href="contact.html">商务合作</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-hero">
+      <div class="wrap">
+        <h1>联系我们</h1>
+        <p>欢迎就技术服务、软件开发或采购合作进行沟通。</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="wrap contact-grid">
+        <div class="contact-info reveal">
+          <h2>公司信息</h2>
+          <dl>
+            <div>
+              <dt>公司名称</dt>
+              <dd>上海英渝哲文科技有限公司</dd>
+            </div>
+            <div>
+              <dt>注册地址</dt>
+              <dd>上海市崇明区横沙乡富民支路 58 号<br>（上海横泰经济开发区）</dd>
+            </div>
+            <div>
+              <dt>法定代表人</dt>
+              <dd>张英</dd>
+            </div>
+            <div>
+              <dt>成立日期</dt>
+              <dd>2022 年 8 月 12 日</dd>
+            </div>
+          </dl>
+          <p style="margin-top: 2rem; color: var(--muted); font-size: 0.9rem;">电话与邮箱待补充后将展示于此。当前可通过表单留下需求，我们会尽快与您联系。</p>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <h2>留下需求</h2>
+          <p>请留下联系方式与需求概要，我们会在工作日内与您联系。</p>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">姓名</label>
+              <input id="name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="company">公司</label>
+              <input id="company" name="company" type="text" autocomplete="organization">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="contact">联系方式</label>
+            <input id="contact" name="contact" type="text" required placeholder="手机或邮箱" autocomplete="email">
+          </div>
+
+          <div class="form-field">
+            <label for="type">合作类型</label>
+            <select id="type" name="type">
+              <option value="tech">技术开发</option>
+              <option value="consult">咨询服务</option>
+              <option value="trade">采购贸易</option>
+              <option value="other">其他</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message">需求简述</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">提交</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <p class="footer-brand">英渝哲文<span>inYu Technology</span></p>
+          <p>上海英渝哲文科技有限公司<br>上海市崇明区横沙乡富民支路 58 号<br>（上海横泰经济开发区）</p>
+        </div>
+        <div class="footer-col">
+          <h3>导航</h3>
+          <a href="index.html">首页</a>
+          <a href="about.html">关于我们</a>
+          <a href="services.html">业务与服务</a>
+          <a href="contact.html">联系我们</a>
+        </div>
+        <div class="footer-col">
+          <h3>业务概要</h3>
+          <p>技术服务与软件开发、信息技术咨询、数据处理与安全系统监控，以及软硬件设备销售与进出口相关服务。</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2022–2026 上海英渝哲文科技有限公司</p>
+        <p>经营范围以市场主体登记信息为准</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
