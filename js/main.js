@@ -55,7 +55,10 @@
       e.preventDefault();
       const status = form.querySelector(".form-status");
       if (status) {
-        status.textContent = "感谢提交。请通过下方地址与我们取得联系，我们会尽快回复。";
+        const isEn = document.documentElement.lang === "en";
+        status.textContent = isEn
+          ? "Thank you. Please reach us via the address below — we will get back to you soon."
+          : "感谢提交。请通过下方地址与我们取得联系，我们会尽快回复。";
         status.classList.add("is-shown");
       }
       form.reset();

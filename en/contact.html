@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | inYu</title>
+  <meta name="description" content="Contact Shanghai Yingyu Zhewen Technology Co., Ltd. for technology collaboration or procurement needs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&family=Outfit:wght@400;500;600&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="inYu home">
+        <span class="brand-mark">inYu</span>
+        <span class="brand-sub">Yingyu Zhewen</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <div class="lang-switch" aria-label="Language">
+          <a href="../contact.html" hreflang="zh-CN" lang="zh-CN">中文</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="contact.html" hreflang="en" aria-current="true">EN</a>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Partner with us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-hero">
+      <div class="wrap">
+        <h1>Contact</h1>
+        <p>We welcome conversations on technology services, software development, or procurement partnerships.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="wrap contact-grid">
+        <div class="contact-info reveal">
+          <h2>Company info</h2>
+          <dl>
+            <div>
+              <dt>Company</dt>
+              <dd>Shanghai Yingyu Zhewen Technology Co., Ltd.</dd>
+            </div>
+            <div>
+              <dt>Registered address</dt>
+              <dd>No. 58 Fumin Branch Road, Hengsha Township<br>Chongming District, Shanghai<br>(Shanghai Hengtai Economic Development Zone)</dd>
+            </div>
+            <div>
+              <dt>Founded</dt>
+              <dd>August 12, 2022</dd>
+            </div>
+          </dl>
+          <p style="margin-top: 2rem; color: var(--muted); font-size: 0.9rem;">Phone and email will appear here once available. You can leave your request via the form — we will follow up soon.</p>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <h2>Send a request</h2>
+          <p>Leave your contact details and a brief description — we will respond on business days.</p>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" autocomplete="organization">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="contact">Contact</label>
+            <input id="contact" name="contact" type="text" required placeholder="Phone or email" autocomplete="email">
+          </div>
+
+          <div class="form-field">
+            <label for="type">Inquiry type</label>
+            <select id="type" name="type">
+              <option value="tech">Technology development</option>
+              <option value="consult">Consulting</option>
+              <option value="trade">Procurement & trade</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Brief description</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <p class="footer-brand">inYu<span>Yingyu Zhewen</span></p>
+          <p>Shanghai Yingyu Zhewen Technology Co., Ltd.<br>No. 58 Fumin Branch Road, Hengsha Township<br>Chongming District, Shanghai<br>(Shanghai Hengtai Economic Development Zone)</p>
+        </div>
+        <div class="footer-col">
+          <h3>Navigate</h3>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h3>At a glance</h3>
+          <p>Technology services and software development, IT consulting, data processing and security monitoring, plus hardware/software sales and import-export related services.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2022–2026 Shanghai Yingyu Zhewen Technology Co., Ltd.</p>
+        <p>Business scope subject to official company registration</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
