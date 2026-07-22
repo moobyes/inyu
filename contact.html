@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>联系我们 | 英渝哲文</title>
-  <meta name="description" content="联系上海英渝哲文科技有限公司，洽谈技术合作或采购需求。">
+  <title>Contact | inYu</title>
+  <meta name="description" content="Contact Shanghai Yingyu Zhewen Technology Co., Ltd. for technology collaboration or procurement needs.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Nunito:wght@600;700;800&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
@@ -19,24 +19,24 @@
 
   <header class="site-header">
     <div class="nav-inner">
-      <a class="brand" href="index.html" aria-label="INYU 英渝哲文">
+      <a class="brand" href="index.html" aria-label="INYU">
         <img class="brand-logo brand-logo-color" src="assets/logo-full.png" alt="INYU" width="160" height="62">
         <img class="brand-logo brand-logo-white" src="assets/logo-full-white.png" alt="" width="160" height="62">
       </a>
-      <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="site-nav">
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
       <nav class="nav-links" id="site-nav">
-        <a href="index.html">首页</a>
-        <a href="about.html">关于我们</a>
-        <a href="services.html">业务与服务</a>
-        <a href="contact.html" aria-current="page">联系我们</a>
-        <div class="lang-switch" aria-label="语言">
-          <a href="contact.html" hreflang="zh-CN" aria-current="true">中文</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <div class="lang-switch" aria-label="Language">
+          <a href="zh/contact.html" hreflang="zh-CN" lang="zh-CN">中文</a>
           <span class="sep" aria-hidden="true">/</span>
-          <a href="en/contact.html" hreflang="en" lang="en">EN</a>
+          <a href="contact.html" hreflang="en" aria-current="true">EN</a>
         </div>
-        <a class="btn btn-primary" href="contact.html">商务合作</a>
+        <a class="btn btn-primary" href="contact.html">Partner with us</a>
       </nav>
     </div>
   </header>
@@ -44,68 +44,68 @@
   <main>
     <header class="page-hero">
       <div class="wrap">
-        <h1>联系我们</h1>
-        <p>欢迎就技术服务、软件开发或采购合作进行沟通。</p>
+        <h1>Contact</h1>
+        <p>We welcome conversations on technology services, software development, or procurement partnerships.</p>
       </div>
     </header>
 
     <section class="section">
       <div class="wrap contact-grid">
         <div class="contact-info reveal">
-          <h2>公司信息</h2>
+          <h2>Company info</h2>
           <dl>
             <div>
-              <dt>公司名称</dt>
-              <dd>上海英渝哲文科技有限公司</dd>
+              <dt>Company</dt>
+              <dd>Shanghai Yingyu Zhewen Technology Co., Ltd.</dd>
             </div>
             <div>
-              <dt>注册地址</dt>
-              <dd>上海市崇明区横沙乡富民支路 58 号<br>（上海横泰经济开发区）</dd>
+              <dt>Registered address</dt>
+              <dd>No. 58 Fumin Branch Road, Hengsha Township<br>Chongming District, Shanghai<br>(Shanghai Hengtai Economic Development Zone)</dd>
             </div>
             <div>
-              <dt>成立日期</dt>
-              <dd>2022 年 8 月 12 日</dd>
+              <dt>Founded</dt>
+              <dd>August 12, 2022</dd>
             </div>
           </dl>
-          <p style="margin-top: 2rem; color: var(--muted); font-size: 0.9rem;">电话与邮箱待补充后将展示于此。当前可通过表单留下需求，我们会尽快与您联系。</p>
+          <p style="margin-top: 2rem; color: var(--muted); font-size: 0.9rem;">Phone and email will appear here once available. You can leave your request via the form — we will follow up soon.</p>
         </div>
 
         <form class="contact-form reveal" id="contact-form" novalidate>
-          <h2>留下需求</h2>
-          <p>请留下联系方式与需求概要，我们会在工作日内与您联系。</p>
+          <h2>Send a request</h2>
+          <p>Leave your contact details and a brief description — we will respond on business days.</p>
 
           <div class="form-row">
             <div class="form-field">
-              <label for="name">姓名</label>
+              <label for="name">Name</label>
               <input id="name" name="name" type="text" required autocomplete="name">
             </div>
             <div class="form-field">
-              <label for="company">公司</label>
+              <label for="company">Company</label>
               <input id="company" name="company" type="text" autocomplete="organization">
             </div>
           </div>
 
           <div class="form-field">
-            <label for="contact">联系方式</label>
-            <input id="contact" name="contact" type="text" required placeholder="手机或邮箱" autocomplete="email">
+            <label for="contact">Contact</label>
+            <input id="contact" name="contact" type="text" required placeholder="Phone or email" autocomplete="email">
           </div>
 
           <div class="form-field">
-            <label for="type">合作类型</label>
+            <label for="type">Inquiry type</label>
             <select id="type" name="type">
-              <option value="tech">技术开发</option>
-              <option value="consult">咨询服务</option>
-              <option value="trade">采购贸易</option>
-              <option value="other">其他</option>
+              <option value="tech">Technology development</option>
+              <option value="consult">Consulting</option>
+              <option value="trade">Procurement & trade</option>
+              <option value="other">Other</option>
             </select>
           </div>
 
           <div class="form-field">
-            <label for="message">需求简述</label>
+            <label for="message">Brief description</label>
             <textarea id="message" name="message" required></textarea>
           </div>
 
-          <button class="btn btn-primary" type="submit">提交</button>
+          <button class="btn btn-primary" type="submit">Submit</button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -117,23 +117,23 @@
       <div class="footer-top">
         <div>
           <img class="footer-logo" src="assets/logo-full-white.png" alt="INYU" width="140" height="54">
-          <p>上海英渝哲文科技有限公司<br>上海市崇明区横沙乡富民支路 58 号<br>（上海横泰经济开发区）</p>
+          <p>Shanghai Yingyu Zhewen Technology Co., Ltd.<br>No. 58 Fumin Branch Road, Hengsha Township<br>Chongming District, Shanghai<br>(Shanghai Hengtai Economic Development Zone)</p>
         </div>
         <div class="footer-col">
-          <h3>导航</h3>
-          <a href="index.html">首页</a>
-          <a href="about.html">关于我们</a>
-          <a href="services.html">业务与服务</a>
-          <a href="contact.html">联系我们</a>
+          <h3>Navigate</h3>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
         </div>
         <div class="footer-col">
-          <h3>业务概要</h3>
-          <p>技术服务与软件开发、信息技术咨询、数据处理与安全系统监控，以及软硬件设备销售与进出口相关服务。</p>
+          <h3>At a glance</h3>
+          <p>Technology services and software development, IT consulting, data processing and security monitoring, plus hardware/software sales and import-export related services.</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2022–2026 上海英渝哲文科技有限公司</p>
-        <p>经营范围以市场主体登记信息为准</p>
+        <p>© 2022–2026 Shanghai Yingyu Zhewen Technology Co., Ltd.</p>
+        <p>Business scope subject to official company registration</p>
       </div>
     </div>
   </footer>
