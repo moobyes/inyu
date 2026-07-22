@@ -1,26 +1,27 @@
-/* —— inYu / 英渝哲文 —— */
+/* —— INYU / 英渝哲文 —— Brand tokens —— */
 :root {
-  --ink: #0e1a28;
-  --ink-soft: #243447;
-  --fog: #f0f4f7;
-  --fog-deep: #d9e3eb;
-  --paper: #f7f9fb;
-  --line: rgba(14, 26, 40, 0.12);
-  --accent: #1a6b5c;
-  --accent-hover: #145548;
-  --accent-soft: rgba(26, 107, 92, 0.12);
-  --muted: #5a6b7a;
+  --ink: #0f2a44;
+  --ink-soft: #1a3d5c;
+  --fog: #f7f9fc;
+  --fog-deep: #e8edf2;
+  --paper: #f7f9fc;
+  --line: rgba(15, 42, 68, 0.12);
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-soft: rgba(37, 99, 235, 0.12);
+  --muted: #5c6b7a;
   --white: #ffffff;
-  --font-display: "Noto Serif SC", "Songti SC", serif;
+  --font-display: "Nunito", "Noto Sans SC", sans-serif;
   --font-body: "Outfit", "Noto Sans SC", sans-serif;
   --space: clamp(1.25rem, 3vw, 2.5rem);
   --max: 1120px;
-  --nav-h: 4.25rem;
+  --nav-h: 4.5rem;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --radius: 10px;
 }
 
 html[lang="en"] {
-  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-display: "Nunito", sans-serif;
   --font-body: "Outfit", system-ui, sans-serif;
 }
 
@@ -65,8 +66,8 @@ ul {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(26, 107, 92, 0.08), transparent 50%),
-    radial-gradient(ellipse 60% 40% at 90% 20%, rgba(36, 52, 71, 0.06), transparent 45%),
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(37, 99, 235, 0.08), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 90% 20%, rgba(15, 42, 68, 0.06), transparent 45%),
     linear-gradient(180deg, var(--fog) 0%, var(--paper) 40%, var(--fog-deep) 100%);
   pointer-events: none;
 }
@@ -100,11 +101,12 @@ ul {
 
 .section-head h2 {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 800;
   font-size: clamp(1.75rem, 3.5vw, 2.35rem);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   line-height: 1.25;
   margin-bottom: 0.75rem;
+  color: var(--ink);
 }
 
 .section-head p {
@@ -126,7 +128,7 @@ ul {
 }
 
 .site-header.is-scrolled {
-  background: rgba(247, 249, 251, 0.88);
+  background: rgba(247, 249, 252, 0.92);
   backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 var(--line);
 }
@@ -149,14 +151,32 @@ ul {
 
 .brand {
   display: flex;
-  flex-direction: column;
-  gap: 0.05rem;
-  line-height: 1.2;
+  align-items: center;
+  position: relative;
+  line-height: 0;
+}
+
+.brand-logo {
+  height: 2.35rem;
+  width: auto;
+  display: block;
+}
+
+.brand-logo-white {
+  display: none;
+}
+
+.site-header.is-over-hero:not(.is-scrolled) .brand-logo-color {
+  display: none;
+}
+
+.site-header.is-over-hero:not(.is-scrolled) .brand-logo-white {
+  display: block;
 }
 
 .brand-mark {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.35rem;
   letter-spacing: 0.06em;
 }
@@ -233,7 +253,7 @@ ul {
   font-weight: 560;
   letter-spacing: 0.02em;
   border: none;
-  border-radius: 2px;
+  border-radius: var(--radius);
   cursor: pointer;
   transition: background 0.25s var(--ease), color 0.25s var(--ease), transform 0.25s var(--ease);
 }
@@ -341,8 +361,8 @@ ul {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(105deg, rgba(14, 26, 40, 0.82) 0%, rgba(14, 26, 40, 0.55) 45%, rgba(14, 26, 40, 0.35) 100%),
-    linear-gradient(0deg, rgba(14, 26, 40, 0.65) 0%, transparent 45%);
+    linear-gradient(105deg, rgba(15, 42, 68, 0.88) 0%, rgba(15, 42, 68, 0.58) 45%, rgba(15, 42, 68, 0.38) 100%),
+    linear-gradient(0deg, rgba(15, 42, 68, 0.7) 0%, transparent 45%);
 }
 
 .hero-content {
@@ -355,33 +375,23 @@ ul {
 }
 
 .hero-brand {
-  font-family: var(--font-display);
-  font-size: clamp(2.75rem, 7vw, 4.75rem);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  line-height: 1.1;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
   opacity: 0;
   transform: translateY(1.25rem);
   animation: rise 0.9s var(--ease) 0.15s forwards;
 }
 
-.hero-brand span {
+.hero-logo {
+  height: clamp(3.25rem, 8vw, 4.75rem);
+  width: auto;
   display: block;
-  font-family: var(--font-body);
-  font-size: 0.28em;
-  font-weight: 500;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  opacity: 0.7;
-  margin-top: 0.5rem;
 }
 
 .hero h1 {
   font-family: var(--font-display);
   font-size: clamp(1.35rem, 2.8vw, 1.85rem);
-  font-weight: 500;
-  letter-spacing: 0.04em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   line-height: 1.45;
   max-width: 22em;
   margin-bottom: 1rem;
@@ -411,12 +421,12 @@ ul {
 }
 
 .hero .btn-primary {
-  background: var(--white);
-  color: var(--ink);
+  background: var(--accent);
+  color: var(--white);
 }
 
 .hero .btn-primary:hover {
-  background: var(--fog);
+  background: var(--accent-hover);
 }
 
 @keyframes rise {
@@ -432,7 +442,7 @@ ul {
   padding-bottom: clamp(2.5rem, 5vw, 3.5rem);
   border-bottom: 1px solid var(--line);
   background:
-    linear-gradient(135deg, rgba(26, 107, 92, 0.06), transparent 55%),
+    linear-gradient(135deg, rgba(37, 99, 235, 0.07), transparent 55%),
     var(--fog);
 }
 
@@ -750,7 +760,7 @@ ul {
   color: var(--ink);
   background: var(--paper);
   border: 1px solid var(--line);
-  border-radius: 2px;
+  border-radius: var(--radius);
   transition: border-color 0.2s;
 }
 
@@ -798,6 +808,13 @@ ul {
   padding-bottom: 2.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 1.5rem;
+}
+
+.footer-logo {
+  height: 2.5rem;
+  width: auto;
+  margin-bottom: 1rem;
+  display: block;
 }
 
 .footer-brand {
@@ -884,7 +901,7 @@ ul {
     align-items: stretch;
     gap: 0;
     padding: 1rem 1.25rem 1.5rem;
-    background: rgba(247, 249, 251, 0.97);
+    background: rgba(247, 249, 252, 0.97);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--line);
     color: var(--ink);
